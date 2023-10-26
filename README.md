@@ -1,2 +1,2 @@
 # EZunblocked
-#https://cyndynaqt.github.io/EZunblocked
+#https://cyndynaqt.github.io/index.html
