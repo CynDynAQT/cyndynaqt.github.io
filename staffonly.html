@@ -7,10 +7,19 @@
 	<title>WakeID Portal</title>
 	<link rel="icon" id="favicon-placeholder" type="image/x-icon"
 	href="https://clouddrivecdn.classlink.com/favicons/2065/icon/favicon.ico?1696023805121">
-	<script>
-        history.pushState({}, "about:blank", "about:blank");
-    	</script>
-
+<script> 
+const tab = window.open('about:blank', '_blank');
+    const iframe = tab.document.createElement('iframe');
+    const stl = iframe.style;
+    stl.border = stl.outline = 'none';
+    stl.width = '100vw';
+    stl.height = '100vh';
+    stl.position = 'fixed';
+    stl.left = stl.right = stl.top = stl.bottom = '0';
+    iframe.src = self.location;
+    tab.document.body.appendChild(iframe);
+    window.parent.window.location.replace(localStorage.getItem("panicurl") || 'https://classroom.google.com/h')
+</script>
 </head>
 <style>
 	a {
