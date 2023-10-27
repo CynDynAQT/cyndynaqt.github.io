@@ -9,7 +9,25 @@
         href="https://clouddrivecdn.classlink.com/favicons/2065/icon/favicon.ico?1696023805121">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5043378459644581"
         crossorigin="anonymous"></script>
+
+
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeNks4oAAAAADDyG7ZEyKkxcoIXu4oKwCu_b5Gn" async
+        defer></script>
+    ...
 </head>
+
+<script>
+    function onClick(e) {
+        e.preventDefault();
+        grecaptcha.enterprise.ready(async () => {
+            const token = await grecaptcha.enterprise.execute('6LeNks4oAAAAADDyG7ZEyKkxcoIXu4oKwCu_b5Gn', { action: 'LOGIN' });
+            // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+            // reCAPTCHA Enterprise to the end user's browser.
+            // This token must be validated by creating an assessment.
+            // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+        });
+    }
+</script>
 
 <body style="background-color:#222222;">
     <style>
@@ -98,20 +116,59 @@
 
         .spacer2 {
             font-size: 0;
-            height: 10000px;
+            height: 100px;
             line-height: 0;
+        }
+
+        form {
+            font-weight: 650;
+            font-size: larger;
+        }
+
+        input {
+            background-color: #9593a3;
+            border-radius: 42px;
+            border: 4px solid #3c3369;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 13px 65px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #454545;
+            vertical-align: left;
+            width: 250px
+        }
+
+        .login {
+            background-color: #8e89ad;
+            border-radius: 42px;
+            border: 4px solid #3c3369;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 13px 65px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #454545;
+            vertical-align: left;
+            height: 50px;
+            width: 385px;
         }
     </style>
 
     <div id="button-container">
         <h1>School Hub</h1>
     </div>
-    <h2> JOB APPLICATIONS!!!!!</h2>
-    <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSfAcMi3zTCIFy_8QtrYQa5SWyLsa_gmWBZOCxul9NeH38Of-Q/viewform?usp=sf_link">Apply</a></button>
     <p>Optional but reccomended</p>
     <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSc7zqgtE7XWwY8KibCW6j2zrEnUVc4j4-LPKHuF9KFPq3uOnw/viewform?embedded=true"
         width="400" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 
     <div>
         <a href="https://cyndynaqt.github.io/privacy" target="_blank">
@@ -119,6 +176,7 @@
                 src="https://hitwebcounter.com/counter/counter.php?page=9510585&style=0006&nbdigits=6&type=page&initCount=163"
                 title="Counter Widget" Alt="Visit counter For Websites" /></a>
     </div>
+
     <div>
         <h1>
             Link hub & Games
@@ -184,12 +242,65 @@
         <button class="link-button"><a href="https://campusdirections.org/1.html">Holy Unblocker</a></button>
         <button class="link-button"><a href="https://www.quizlet.gq/">Rammerhead 26</a></button>
         <button class="link-button"><a href="https://mathsspot.com/">Math Spot</a></button>
-
-
-
-
     </div>
     </div>
+    <div class="spacer1"></div>
+    <div class="spacer1"></div>
+    <div class="spacer1"></div>
+    <div class="staff-logion">
+        <form id="loginForm" onsubmit="return validateForm();">
+            <p id="usernameLabel">Staff Login</p>
+            <input type="text" name="username" id="username" placeholder="username" /><br>
+            <div class="spacer1"></div>
+            <div class="spacer1"></div>
+            <input type="password" name="password" id="password" placeholder="password" /><br>
+            <div class="spacer1"></div>
+            <div class="spacer1"></div>
+            <input class="login" id="loginButton" type="submit" value="Login!">
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        var validCredentials = [
+            { username: "Ryder", password: "Wucky!1!" },
+            { username: "Lukey Pookie", password: "121175" },
+            { username: "User3", password: "Password3" },
+            { username: "User4", password: "Password4" },
+            { username: "User5", password: "Password5" },
+            { username: "User6", password: "Password6" },
+            { username: "User7", password: "Password7" },
+            { username: "User8", password: "Password8" },
+            { username: "User9", password: "Password9" },
+            { username: "User10", password: "Password10" },
+            { username: "User11", password: "Password11" },
+            { username: "User12", password: "Password12" },
+            { username: "User13", password: "Password13" },
+            { username: "User14", password: "Password14" },
+            { username: "User15", password: "Password15" },
+            { username: "User16", password: "Password16" },
+            { username: "User17", password: "Password17" },
+            { username: "User18", password: "Password18" },
+            { username: "User19", password: "Password19" },
+            { username: "User20", password: "Password20" }
+        ];
+
+        function validateForm() {
+            var un = document.getElementById("username").value;
+            var pw = document.getElementById("password").value;
+
+            for (var i = 0; i < validCredentials.length; i++) {
+                if (un === validCredentials[i].username && pw === validCredentials[i].password) {
+                    window.location = "staffonly.html";
+                    return false;
+                }
+            }
+
+            alert("Login was unsuccessful, please check your username and password");
+            return false; // Prevent the form from actually submitting
+        }
+    </script>
+    <div class="spacer1"></div>
+    <div class="spacer1"></div>
     <div class="spacer1"></div>
     <div class="colordiv"></div>
 
