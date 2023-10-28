@@ -1,3 +1,5 @@
+
+
 <center>
 <h1 class="white-text">You can use this to make many unwanted or bad things in your history (note this does not delete your history it just floods it to make things harder to find)</h1>
 </center>
@@ -17,10 +19,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            WakeID Portal
-        </title>
-        <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png">
+	<title>My Drive - Google Drive</title>
+	<link rel="icon" href="//ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png">
         <script>
             function onClick() {
                 var num=prompt("History flood amount:");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert("History flood successful! "+window.location.href+" now appears in your history "+num+(num==1?" time.":" times."))}
