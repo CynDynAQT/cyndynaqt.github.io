@@ -1,0 +1,128 @@
+<center>
+<h1 class="white-text">You can use this to make many unwanted or bad things in your history (note this does not delete your history it just floods it to make things harder to find)</h1>
+</center>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: #141414;
+    }
+</style>
+</head>
+<body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Google Docs
+        </title>
+        <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png">
+        <script>
+            function onClick() {
+                var num=prompt("History flood amount:");done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert("History flood successful! "+window.location.href+" now appears in your history "+num+(num==1?" time.":" times."))}
+            };
+        </script>
+    </head>
+    <body>
+</html>
+
+<style>
+	a {
+		font-family: Arial, sans-serif;
+		color: #3A3B3C;
+
+	}
+
+	h2 {
+		font-family: Arial, sans-serif;
+		color: #B9BBB6;
+	}
+
+	h1 {
+		font-family: Arial, sans-serif;
+		color: #B9BBB6;
+	}
+
+	p {
+		font-family: Arial, sans-serif;
+		color: #B9BBB6;
+	}
+
+	footer {
+		font-family: Arial, sans-serif;
+		color: #B9BBB6;
+	}
+
+	footer2 {
+		font-family: Arial, sans-serif;
+		color: #B9BBB6;
+	}
+
+	.spacer1 {
+		font-size: 0;
+		height: 8px;
+		line-height: 0;
+	}
+
+	.spacer2 {
+		font-size: 0;
+		height: 10000px;
+		line-height: 0;
+	}
+
+	button {
+		background-color: #a6a6a6;
+		border-radius: 42px;
+		border: 4px solid #5c5c5c;
+		display: inline-block;
+		cursor: pointer;
+		color: #ffffff;
+		font-family: Arial;
+		font-size: 17px;
+		font-weight: bold;
+		padding: 13px 65px;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px #454545;
+		vertical-align: left;
+		height: 50px;
+		width: 300px
+	}
+
+	button:hover {
+		background-color: #383838;
+	}
+
+	button:active {
+		position: relative;
+		top: 1px;
+	}
+
+	.footer {
+		background-color: #42403e;
+		font-weight: bold;
+		overflow-y: visable;
+	}
+
+
+
+	.invis {
+		color: #494949;
+	}
+
+	.link-a {
+		color: #B9BBB6;
+	}
+
+	.colordiv {
+		height: 5px;
+		background-color: #0e0e0e;
+	}
+</style>
+
+<center>
+<button onclick="onClick()">Flood History!</button>
+	</center>
