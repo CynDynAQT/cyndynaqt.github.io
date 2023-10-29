@@ -279,3 +279,6 @@ float:left;
 margin-left: 20px;
 margin-right: 10px;
 }
+.flex-container {
+    display: flex;
+}
