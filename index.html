@@ -311,11 +311,10 @@
   from {opacity: .4}
   to {opacity: 1}
 }
-        .left-news {
-            float: left;
-            margin-right: 20px; /* Adjust the margin as needed to control the spacing */
-        }
-
+.left-news{
+margin-right: auto;
+margin-left: 20px;
+}
 	
     </style>
 
@@ -339,32 +338,34 @@
 
 	</div>
 
-<div class="slideshow-container-full">
-    <div class="left-news">
-        <button class="link-button"><a href="https://forms.gle/vLzMw26juYaZoNDt9">Staff Applications</a></button>
-    </div>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/assets/57-1920x1080.jpg?raw=true" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/assets/363-1920x1080.jpg?raw=true" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <div class "numbertext">3 / 3</div>
-            <img src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/assets/529-1920x1080.jpg?raw=true" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/assets/57-1920x1080.jpg?raw=true" style="width:100%">
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/assets/363-1920x1080.jpg?raw=true" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/assets/529-1920x1080.jpg?raw=true" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
 <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 </div>
 
 <script>
@@ -372,27 +373,27 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+  showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 </script>
 
@@ -403,7 +404,7 @@ function showSlides(n) {
 <div class="spacer1"></div>
 <div class="spacer1"></div>
 <div class="spacer1"></div>
-		<center>
+		
 		</div>	
 	<p class=big>Chat (Expirimental)</p>
 	<iframe class=chat src="./chat.html"></iframe> 
@@ -413,9 +414,8 @@ function showSlides(n) {
             <img
                 src="https://hitwebcounter.com/counter/counter.php?page=9510585&style=0006&nbdigits=6&type=page&initCount=163"
                 title="Counter Widget" Alt="Visit counter For Websites" /></a>
-	    
     </div>
-</center>
+
     <div>
         <h1>
             Link hub & Games
