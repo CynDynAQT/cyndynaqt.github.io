@@ -8,7 +8,7 @@
             { username: "staley", password: "legoat" },
             { username: "jordanisw", password: "lebronistrash" },
             { username: "ethan", password: "69" },
-            { username: "User10", password: "Password10" },
+            { username: "backup1", password: "backup1" },
             { username: "User11", password: "Password11" },
             { username: "User12", password: "Password12" },
             { username: "User13", password: "Password13" },
