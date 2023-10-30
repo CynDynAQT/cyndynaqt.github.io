@@ -9,7 +9,7 @@
             { username: "jordanisw", password: "lebronistrash" },
             { username: "ethan", password: "69" },
             { username: "backup1", password: "backup1" },
-            { username: "User11", password: "Password11" },
+            { username: "bigpp", password: "Randy" },
             { username: "User12", password: "Password12" },
             { username: "User13", password: "Password13" },
             { username: "User14", password: "Password14" },
