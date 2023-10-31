@@ -10,7 +10,7 @@
             { username: "ethan", password: "69" },
             { username: "backup1", password: "backup1" },
             { username: "bigpp", password: "Randy" },
-            { username: "User12", password: "Password12" },
+            { username: "daddys", password: "bigboys" },
             { username: "User13", password: "Password13" },
             { username: "User14", password: "Password14" },
             { username: "User15", password: "Password15" },
