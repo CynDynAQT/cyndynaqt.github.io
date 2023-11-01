@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   	<title>My Drive - Google Drive</title>
-	<link rel="icon" href="//ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png">
+    <title>My Drive - Google Drive</title>
+    <link rel="icon" href="//ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5043378459644581"
-        crossorigin="anonymous"></script>	
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5043378459644581"
-     crossorigin="anonymous"></script>
-	<meta name="google-adsense-account" content="ca-pub-5043378459644581">
+        crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5043378459644581"
+        crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-5043378459644581">
 
 
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeNks4oAAAAADDyG7ZEyKkxcoIXu4oKwCu_b5Gn" async
         defer></script>
+    <link rel="stylesheet" href="data/styles.css">
+
 </head>
 
 <script>
@@ -22,373 +24,95 @@
         e.preventDefault();
         grecaptcha.enterprise.ready(async () => {
             const token = await grecaptcha.enterprise.execute('6LeNks4oAAAAADDyG7ZEyKkxcoIXu4oKwCu_b5Gn', { action: 'LOGIN' });
-            // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-            // reCAPTCHA Enterprise to the end user's browser.
-            // This token must be validated by creating an assessment.
-            // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
         });
     }
 </script>
 
 <body style="background-color:#222222;margin: 0;padding: 0;">
-    <style>
-        a {
-            font-family: Arial, sans-serif;
-            color: #3A3B3C;
 
-        }
-
-        h2 {
-            font-family: Arial, sans-serif;
-            color: #B9BBB6;
-        }
-
-        h1 {
-            font-family: Arial, sans-serif;
-            color: #B9BBB6;
-        }
-
-        p {
-            font-family: Arial, sans-serif;
-            color: #B9BBB6;
-        }
-
-        footer {
-            font-family: Arial, sans-serif;
-            color: #B9BBB6;
-        }
-
-        footer2 {
-            font-family: Arial, sans-serif;
-            color: #B9BBB6;
-        }
-
-        .spacer1 {
-            font-size: 0;
-            height: 8px;
-            line-height: 0;
-        }
-
-        button {
-            background-color: #a6a6a6;
-            border-radius: 42px;
-            border: 4px solid #5c5c5c;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Arial;
-            font-size: 17px;
-            font-weight: bold;
-            padding: 13px 65px;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #454545;
-            vertical-align: left;
-            height: 50px;
-            width: 300px
-        }
-
-        button:hover {
-            background-color: #383838;
-        }
-
-        button:active {
-            position: relative;
-            top: 1px;
-        }
-
-        .footer {
-            background-color: #42403e;
-            font-weight: bold;
-        }
-
-        .invis {
-            color: #494949;
-        }
-
-        .link-a {
-            color: #B9BBB6;
-        }
-
-        .colordiv {
-            height: 5px;
-            background-color: #0e0e0e;
-            height: 100%
-        }
-
-        .spacer2 {
-            font-size: 0;
-            height: 100px;
-            line-height: 0;
-        }
-
-        form {
-            font-weight: 650;
-            font-size: larger;
-        }
-
-        input {
-            background-color: #9593a3;
-            border-radius: 42px;
-            border: 4px solid #3c3369;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Arial;
-            font-size: 17px;
-            font-weight: 500;
-            padding: 13px 65px;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #454545;
-            vertical-align: left;
-            width: 250px
-        }
-
-        .login {
-            background-color: #8e89ad;
-            border-radius: 42px;
-            border: 4px solid #3c3369;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Arial;
-            font-size: 17px;
-            font-weight: 500;
-            padding: 13px 65px;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #454545;
-            vertical-align: left;
-            height: 50px;
-            width: 385px;
-        }
-        .top-bar {
-            background-color: #6A6A6A;
-            height: 100px;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .top-bar img {
-            margin-left: 40px;
-        }
-
-        .ciframe {
-            margin-left: auto; /* Push the iframe to the right */
-            margin-right: 20px; /* Add space between the iframe and .top-bar */
-        }
-	.proxy-new {
-            background-color: #a6a6a6;
-            border-radius: 42px;
-            border: 4px solid #5c5c5c;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Arial;
-            font-size: 51px;
-            font-weight: bold;
-            padding: 13px 65px;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #454545;
-            vertical-align: left;
-            height: 150px;
-            width: 500px
-        }
-
-        .proxy-new:hover {
-            background-color: #383838;
-        }
-
-        .proxy-new:active {
-            position: relative;
-            top: 1px;
-        }
-	.link-button {
-            background-color: #8e89ad;
-            border-radius: 42px;
-            border: 4px solid #3c3369;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Arial;
-            font-size: 17px;
-            font-weight: bold;
-            padding: 13px 65px;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #454545;
-            vertical-align: left;
-            height: 75px;
-            width: 300px
-        }
-	    .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-	
-    </style>
 
     <div class=top-bar>
-        <img href="index.html" src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/data/Ephoto360.com_1653c8649b7b13-removebg-preview%20(1).png?raw=true"></img>
-                    <iframe class="ciframe" src="https://free.timeanddate.com/clock/i93508w3/n207/fs45/fcddd/tct/pct/ftb/pa18/th2" frameborder="0" width="339" height="88" allowtransparency="true"></iframe>
+        <img href="index.html"
+            src="https://github.com/CynDynAQT/cyndynaqt.github.io/blob/main/data/Ephoto360.com_1653c8649b7b13-removebg-preview%20(1).png?raw=true"></img>
+        <iframe class="ciframe" src="https://free.timeanddate.com/clock/i93508w3/n207/fs45/fcddd/tct/pct/ftb/pa18/th2"
+            frameborder="0" width="339" height="88" allowtransparency="true"></iframe>
     </div>
     <div class=spacer1></div>
     <div class=spacer1></div>
     <div class=spacer1></div>
-		<div>
-            <button class="link-button"><a href="https://forms.gle/vLzMw26juYaZoNDt9">Staff Applications</a></button>
+    <div class="news-all">
+        <button class="link-button"><a href="https://forms.gle/vLzMw26juYaZoNDt9">Staff Applications</a></button>
 
-			<!-- Slideshow container -->
-<div class="slideshow-container">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="./assets/Untitled (2).png" style="width:100%">
-</div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./assets/Untitled (2).png" style="width:100%">
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="./assets/Untitled (3).png" style="width:100%">
-</div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./assets/Untitled (3).png" style="width:100%">
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="./assets/Untitled (4).png" style="width:100%">
-</div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./assets/Untitled (4).png" style="width:100%">
+            </div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
 
-</div>
-<br>
+        </div>
+        <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-<center>
-<h1>Chat Room</h1>
-			<p>**anyone with worker, employee, or staff at the beginning of their name are staff</p>
-<iframe src="https://cyndynaqt.github.io/chat.html" width="1000" height="500"></iframe>
-</center>
-
-
-        <a href="https://cyndynaqt.github.io/privacy" target="_blank">
-            <img
-                src="https://hitwebcounter.com/counter/counter.php?page=9510585&style=0006&nbdigits=6&type=page&initCount=163"
-                title="Counter Widget" Alt="Visit counter For Websites" /></a>
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
     </div>
+    <center>
+        <h1>Chat Room</h1>
+        <p>**anyone with worker, employee, or staff at the beginning of their name are staff</p>
+        <iframe src="https://cyndynaqt.github.io/chat.html" width="1000" height="500"></iframe>
+    </center>
+
+
+    <a href="https://cyndynaqt.github.io/privacy" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=9510585&style=0006&nbdigits=6&type=page&initCount=163"
+            title="Counter Widget" Alt="Visit counter For Websites" /></a>
+
 
     <div>
         <h1>
@@ -399,7 +123,7 @@ function showSlides(n) {
             <button> <a href=games.html>Games page</a></button>
         </div>
         <h2>Proxies</h2>
-	    <button class=proxy-new><a href="./prox.html">Proxies!</a>
+        <button class=proxy-new><a href="./prox.html">Proxies!</a>
     </div>
     <div class="spacer1"></div>
     <div class="spacer1"></div>
@@ -432,7 +156,8 @@ function showSlides(n) {
         <div>
             <p>Partners</p>
             <button><a href="https://sites.google.com/students.wcpss.net/bigcashgames">Big Cash Games!</a></button>
-	    <button><a href="https://sites.google.com/students.wcpss.net/littlecashgames">Little Cash Games!</a></button>
+            <button><a href="https://sites.google.com/students.wcpss.net/littlecashgames">Little Cash
+                    Games!</a></button>
 
         </div>
         <div>
