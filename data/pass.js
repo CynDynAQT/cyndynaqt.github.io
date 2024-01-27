@@ -3,7 +3,7 @@
             { username: "Lukey Pookie", password: "121175" },
             { username: "hank", password: "meleavingthetheater" },
             { username: "Zachgotthat", password: "53brawner" },
-            { username: "Ryan footdick", password: "Shrim" },
+            { username: "UNUSED", password: "UNUSED" },
             { username: "nigger", password: "TacoBell2011" },
             { username: "staley", password: "legoat" },
             { username: "jordanisw", password: "lebronistrash" },
