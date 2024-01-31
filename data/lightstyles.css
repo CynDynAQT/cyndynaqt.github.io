@@ -1,6 +1,6 @@
 .topbar {
     height: 100px;
-    background-color: #0C0A09;
+    background-color: #f5f5f5; /* Light background color */
     margin: 5px;
     border-radius: 20px;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #161514;
+    background-color: #ffffff; /* White background */
 }
 
 .logo {
@@ -23,11 +23,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #22C55E;
+    background-color: #b3e0a8; /* Light green background color */
     height: 70px;
     width: 70px;
     border-radius: 20px;
-    border: 5px solid #1a8541;
+    border: 5px solid #6d9945; /* Darker green border color */
     margin-right: 10px;
     overflow: visible;
 }
@@ -48,16 +48,16 @@ body {
     right: 0;
     width: 300px;
     height: 400px;
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff; /* White background color */
+    color: #333333; /* Dark text color */
     padding: 10px;
-    opacity: 0; /* Start with 0 opacity */
-    visibility: hidden; /* Start with hidden visibility */
-    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s; /* Add transitions for opacity and visibility */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
 }
 
 .settings:hover .panel {
-    opacity: 1; /* Fade in on hover */
-    visibility: visible; /* Make it visible on hover */
-    transition-delay: 0s; /* Reset transition delay */
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
