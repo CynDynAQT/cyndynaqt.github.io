@@ -69,7 +69,7 @@ function getRandomName() {
 }
 
 function getRandomColor() {
-  return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+  return '#22C55E';
 }
 
 //------------- DOM STUFF
@@ -102,6 +102,7 @@ function createMemberElement(member) {
   el.appendChild(document.createTextNode(name));
   el.className = 'member';
   el.style.color = color;
+  el.style.fontWeight = 'bold'; // Set text to bold
   return el;
 }
 
@@ -118,8 +119,10 @@ function createMessageElement(text, member) {
   el.appendChild(createMemberElement(member));
   el.appendChild(document.createTextNode(text));
   el.className = 'message';
+  el.style.fontWeight = 'bold'; // Set text to bold
   return el;
 }
+
 
 function addMessageToListDOM(text, member) {
   const el = DOM.messages;
