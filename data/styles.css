@@ -1,15 +1,19 @@
 .topbar {
     height: 100px;
     background-color: #0C0A09;
-    margin: 5px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 body{
     background-color: #161514;
+    margin: 0;
+    padding: 0;
 }
 .logo {
     height: 70px;
@@ -74,13 +78,16 @@ margin-bottom: 20px;
   }
   .buttonpart {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px; /* Adjust the margin as needed */
-  }
-  
-  .links {
-    width: 100px; /* Adjust the width as needed */
-    height: 40px; /* Adjust the height as needed */
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.links {
+    width: 150px;
+    height: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -92,9 +99,33 @@ margin-bottom: 20px;
     border-radius: 5px;
     cursor: pointer;
     outline: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .links:hover {
-    background-color: #0c0a09; /* Darker background color on hover */
-  }
+    text-decoration: none; /* Remove underline from links */
+    color: black;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-bottom: 40px;
+}
+.links a {
+    color: black;
+    font-weight: bold;
+}
+.links:hover {
+    background-color:#1a8541;
+    ;
+}
+.footer {
+    background-color: #222; /* Set your desired background color */
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center; /* Optional: Center align text */
+    margin: 0; /* Remove margins */
+    display:flex;
+    justify-content: space-between;
+}
+.footer a{
+    margin-left: 100px;
+    margin-right: 100px;
+    color:#161514;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
