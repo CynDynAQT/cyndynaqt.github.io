@@ -1,0 +1,5 @@
+body {
+    background-image: url('./assets/stafflogincity.png');
+    background-size: cover; /* Adjust the size of the background image */
+    background-position: center; /* Position the background image */
+}
